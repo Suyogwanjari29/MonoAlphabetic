@@ -1,0 +1,86 @@
+<html>
+<head>
+    <link rel="stylesheet" href="main.css">
+</head>
+<title>Mono-Alphabetic Cipher</title>
+<body>
+<div class="content" id="experiment-article-section-4-content">
+                            <div class="center">
+                                <p class="p"><h1>Mono Alphabetic Substitution Cipher</h1></p>
+                              </div>
+                              <p class="d">Aim : To implement Mono-Alphabetic Substitution Cipher.
+                              </p>
+                              <p class="d">A mono-alphabetic substitution cipher is a type of substitution ciphers in which the equivalent letters of the plaintext are restored by the same letters of the ciphertext. 
+                                Mono, which defines one, it signifies that each letter of the plaintext has a single substitute of the ciphertext.
+                                In Monoalphabetic cipher, the substitute characters symbols supports a random permutation of 26 letters of the alphabet. 26! Permutations of the alphabet go up to 4*10^26. 
+                              </p>
+                              <p class="d">This creates it complex for the hacker to need brute force attack to gain the key.
+                                Mono-alphabetic cipher is a type of substitution where the relationship among a symbol in the plaintext and a symbol in the cipher text is continually one-to-one and it remains fixed throughout the encryption process.</p>
+                                
+                              <div class="stim">
+                                
+                                <img src="C:\Users\91880\OneDrive\Desktop\Mono.png" alt="Mono-Alphabetic" width="500" height="400">
+                                <p class="step"><b>Steps for Encryption</b><br><br>
+
+                                  1.Enter the Plaintext.<br>
+                                  2.Enter the key of 26 characters or use the key<br>&nbsp; thats provided or choose random key.<br>
+                                  3.Press Encrypt for encryption.<br>
+
+                                </p>
+                              <p class="p"><B>Plaintext</B>
+                                <br>
+                                <textarea cols="50" id="p" class="area" name="p" rows="2"></textarea>
+                                <br>
+                            </p>
+                            <p class="p">
+                                key =
+                                <input id="key" maxchars="25" name="key" size="25" type="text" value="cdefghijklmnopqrstuvwxyzab">
+                                <input name="genKey" class="button1" onclick="Mono_GenRandKey()" type="button" value="Generate Random Key">
+                            </p>
+                            <p class="p">
+                                <input name="button" class="buttone" onclick="Mono_Encrypt()" type="button" value="Encrypt">
+                                <input name="button" class="buttond" onclick="Mono_Decrypt()" type="button" value="Decrypt">
+                            </p>
+                            <p class="p">
+                                <input id="punc" name="punc" type="checkbox"> Remove Punctuation</p>
+                            <p class="p"><b>Ciphertext</b>
+                                <br>
+                                <textarea cols="50" id="c" class="area" name="c" rows="2"></textarea>
+                                <br>
+                            </p>
+                            <p class="step"><b>Steps for Decryption</b><br><br>
+
+                              1.Enter the ciphertext.<br>
+                              2.Enter the key of 26 characters or use the key<br> &nbsp; thats provided or choose random key.<br>
+                              3.If you want your encrypted text to be Decrypted then copy<br>&nbsp; your Decrypted text again in cipher text box.<br>
+                              4.Press Decrypt for decryption.<br>
+
+                            </p>
+                          </div>
+                        </div>
+                        <div class="assi">
+                                <p><h1>Assignment</h1></p>
+                              </div>
+                            <p class = "assignment">
+
+                              Encrypt the following plain text using the key given:
+                              <br>Plain Text : Lord Rama was a great king.
+                              <br>Key: cdefghijklmnopqrstuvwxyzab<br><br>
+
+                              Decrypt the following cipher text with the key given
+                              <br>Cipher Text : nqtf tcoc ycu c itgcv mkpi.
+                              <br>Key: cdefghijklmnopqrstuvwxyzab
+                          
+                            </p><hr>
+                            <div class="about">
+                              <p><h1>About Us</h1></p>
+                              <p class="as">
+                                Shriganesha Jibhakate<br>
+                                Pravin Pardhi<br>
+                                Suyog Wanjari<br>
+                              </p>
+                            </div>               
+        <script src="exp2.js"></script>
+
+</body>
+</html>
